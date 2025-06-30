@@ -48,25 +48,37 @@ This work enables research on:
 ## Quick Start
 
 from transformers import AutoTokenizer
+
 from huggingface_hub import hf_hub_download
+
 import torch
+
 
 # Choose any resource:
 tokenizer = AutoTokenizer.from_pretrained('Bochkov/bvv241-max')
+
 emb_path = hf_hub_download(repo_id="Bochkov/bvv241-max", filename="normalized_embeddings_weights.pt")
+
 embeddings = torch.load(emb_path)  # shape: [vocab_size, emb_dim]
 
 📊 Benchmarks & Research Notebooks
 _tokenizer-benchmarking-t-sne.ipynb
+
 — Visualizes token/embedding distribution via t-SNE, comparing BVV tokenizers with SOTA baselines.
 
+
 _models_benchmarking.py, _models_benchmarking.plot.ipynb, _models_benchmarking.code.ipynb
+
 — Scripts and notebooks to benchmark models (BLEU, MMLU, ARC) using these tokenizers & embeddings versus SOTA tokenizers.
 
+
 _n-gramms-from-wiki.ipynb
+
 — Extraction of frequent n-grams from Wikipedia to fill Unicode private ranges, enriching token coverage.
 
+
 _tokenizer-builder-*.ipynb
+
 — Complete construction logic for each tokenizer/embedding variant.
 
 🗂️ File Structure
@@ -94,8 +106,10 @@ These embeddings are never trained, encode no semantic information, and are suit
 
 You are free to combine, swap, and experiment with models and tokenizers—unified by their Unicode-surface-based, frozen embedding matrix—without retraining! This enables fair benchmarking of the ability of deep architectures (alone) to synthesize meaning.
 
-🏆 Citation & Acknowledgement
-If you use these resources, please cite or reference this repository and HF models.
+🧑‍🔬 Citation & Concept
+If you use or build upon this demo, please cite:
+
+Bochkov, A. "Emergent Semantics Beyond Token Embeddings: Transformer LMs with Frozen Visual Unicode Representations" (2025)
 
 Core concepts and code: © A. Bochkov 2025.
 
