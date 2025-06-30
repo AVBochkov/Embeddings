@@ -10,7 +10,7 @@ This repo provides:
 - Precomputed, **L2-normalized, frozen embedding matrices** (for direct plug-in as nn.Embedding),
 - Tools for building hybrid vocabularies (Unicode + bigram/trigram extensions + SOTA token string intersection),
 - Live benchmarking and visualization pipelines (SOTA vs custom models, t-SNE, BLEU/MMLU/ARC),
-- **HuggingFace Hub** integration, with all resources ([Bochkov/bvv241-2-3](https://huggingface.co/Bochkov/bvv241-2-3), [Bochkov/bvv241-max](https://huggingface.co/Bochkov/bvv241-max), [Bochkov/bvv241-nemo](https://huggingface.co/Bochkov/bvv241-nemo), [Bochkov/bvv241-abs](https://huggingface.co/Bochkov/bvv241-abs)).
+- **HuggingFace Hub** integration, with all resources ([Bochkov](https://huggingface.co/Bochkov)).
 
 This work enables research on:
 
