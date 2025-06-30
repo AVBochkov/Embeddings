@@ -2,7 +2,7 @@
 
 A research resource for cross-model Unicode-centric tokenization, *frozen embedding* LMs, and experimentation on the emergence of semantics and modular model fusion.
 
-## 🔥 About This Repository
+## About This Repository
 
 This repo provides:
 
@@ -19,7 +19,7 @@ This work enables research on:
 - Experimental fusion of models with different tokenizer histories.
 
 
-## 📚 Tokenizer and Embedding Variants
+## Tokenizer and Embedding Variants
 
 ### 1. [bvv241-2-3](https://huggingface.co/Bochkov/bvv241-2-3)
 - **Unicode plane** (0–65535): All single Unicode codepoints (monograms).
@@ -45,12 +45,7 @@ This work enables research on:
 
 ---
 
-## 🚀 Quick Start
-
-Install dependencies:
-```bash
-pip install torch transformers huggingface_hub
-Example: Load tokenizer & frozen embeddings in Python
+## Quick Start
 
 from transformers import AutoTokenizer
 from huggingface_hub import hf_hub_download
