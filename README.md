@@ -90,9 +90,9 @@ Plug-and-play modular/MoE experiments: plug-in new "experts" or fuse LMs trained
 Exploration of Unicode-standardized, reproducible vocabularies for multilingual and cross-model pipelines.
 Scientific novelty:
 
-Unlike ByT5, CANINE or classic sub-word models, these embeddings are never trained, encode no semantic information, and are suitable for research into meaning arising solely in transformer layers above embedding.
+These embeddings are never trained, encode no semantic information, and are suitable for research into meaning arising solely in transformer layers above embedding.
 
-Moral: You are free to combine, swap, and experiment with models and tokenizers—unified by their Unicode-surface-based, frozen embedding matrix—without retraining! This enables fair benchmarking of the ability of deep architectures (alone) to synthesize meaning.
+You are free to combine, swap, and experiment with models and tokenizers—unified by their Unicode-surface-based, frozen embedding matrix—without retraining! This enables fair benchmarking of the ability of deep architectures (alone) to synthesize meaning.
 
 🏆 Citation & Acknowledgement
 If you use these resources, please cite or reference this repository and HF models.
