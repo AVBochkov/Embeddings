@@ -60,34 +60,41 @@ emb_path = hf_hub_download(repo_id="Bochkov/bvv241-max", filename="normalized_em
 embeddings = torch.load(emb_path)  # shape: [vocab_size, emb_dim]
 
 ## 📊 Benchmarks & Research Notebooks
-_tokenizer-benchmarking-t-sne.ipynb
+**_tokenizer-benchmarking-t-sne.ipynb**
 
 — Visualizes token/embedding distribution via t-SNE, comparing BVV tokenizers with SOTA baselines.
 
 
-_models_benchmarking.py, _models_benchmarking.plot.ipynb, _models_benchmarking.code.ipynb
+**_models_benchmarking.py, _models_benchmarking.plot.ipynb, _models_benchmarking.code.ipynb**
 
 — Scripts and notebooks to benchmark models (BLEU, MMLU, ARC) using these tokenizers & embeddings versus SOTA tokenizers.
 
 
-_n-gramms-from-wiki.ipynb
+**_n-gramms-from-wiki.ipynb**
 
 — Extraction of frequent n-grams from Wikipedia to fill Unicode private ranges, enriching token coverage.
 
 
-_tokenizer-builder-*.ipynb
+**_tokenizer-builder-*.ipynb**
 
 — Complete construction logic for each tokenizer/embedding variant.
 
 ## 🗂️ File Structure
 ### File/Notebook	Purpose
 _tokenizer-benchmarking-t-sne.ipynb	- t-SNE visualizations of token space and embedding overlap
+
 _n-gramms-from-wiki.ipynb	- Extracting n-grams for vocab extension
+
 _n-gramms-2-3-4-5.txt (etc)	- Precomputed n-gram lists (for reproducible vocab)
+
 _n-gramms-intersection.txt	- Common token strings across SOTA tokenizers
+
 _tokenizer-builder-*	- Jupyter code for building each tokenizer/embedding set
+
 _models_benchmarking.*	- Benchmark scripts, plots, example use in LM evaluation
+
 normalized_embeddings_weights.pt	- Main embedding matrix for each tokenizer version
+
 All tokenizers and embeddings are mirrored on HuggingFace Hub.
 
 ## ⚗️ Research Scope & Scientific Context
@@ -96,8 +103,11 @@ All tokenizers and embeddings are mirrored on HuggingFace Hub.
 These resources enable:
 
 Investigation into semantic emergence when training transformers with fixed, non-semantic ("surface-level") embeddings.
+
 Plug-and-play modular/MoE experiments: plug-in new "experts" or fuse LMs trained with different tokenizations, since embeddings are structurally identical and fixed.
+
 Exploration of Unicode-standardized, reproducible vocabularies for multilingual and cross-model pipelines.
+
 Scientific novelty:
 
 These embeddings are never trained, encode no semantic information, and are suitable for research into meaning arising solely in transformer layers above embedding.
