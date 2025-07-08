@@ -115,11 +115,21 @@ These embeddings are never trained, encode no semantic information, and are suit
 You are free to combine, swap, and experiment with models and tokenizers—unified by their Unicode-surface-based, frozen embedding matrix—without retraining! This enables fair benchmarking of the ability of deep architectures (alone) to synthesize meaning.
 
 ## 🧑‍🔬 Citation & Concept
+🧑‍🔬 Citation & Concept
+
 If you use or build upon this demo, please cite:
+```
+@misc{bochkov2025emergentsemanticstokenembeddings,
+      title={Emergent Semantics Beyond Token Embeddings: Transformer LMs with Frozen Visual Unicode Representations}, 
+      author={A. Bochkov},
+      year={2025},
+      eprint={2507.04886},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2507.04886}, 
+}
 
-Bochkov, A. "Emergent Semantics Beyond Token Embeddings: Transformer LMs with Frozen Visual Unicode Representations" (2025)
-
-Core concepts and code: © A. Bochkov 2025.
+```
 
 Feel free to contact for research collaborations.
 
