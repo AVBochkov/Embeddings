@@ -129,6 +129,16 @@ If you use or build upon this demo, please cite:
       url={https://arxiv.org/abs/2507.04886}, 
 }
 
+@misc{bochkov2025growingtransformersmodularcomposition,
+      title={Growing Transformers: Modular Composition and Layer-wise Expansion on a Frozen Substrate}, 
+      author={A. Bochkov},
+      year={2025},
+      eprint={2507.07129},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2507.07129}, 
+}
+
 ```
 
 Feel free to contact for research collaborations.
