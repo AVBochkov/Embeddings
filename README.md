@@ -120,14 +120,14 @@ You are free to combine, swap, and experiment with models and tokenizers—unifi
 If you use or build upon this demo, please cite:
 ```
 @article{
-bochkov2025emergent,
-title={Emergent Semantics Beyond Token Embeddings: Transformer {LM}s with Frozen Visual Unicode Representations},
-author={Andrey Bochkov},
-journal={Transactions on Machine Learning Research},
-issn={2835-8856},
-year={2025},
-url={https://openreview.net/forum?id=Odh8IynO1o},
-note={}
+      bochkov2025emergent,
+      title={Emergent Semantics Beyond Token Embeddings: Transformer {LM}s with Frozen Visual Unicode Representations},
+      author={Andrey Bochkov},
+      journal={Transactions on Machine Learning Research},
+      issn={2835-8856},
+      year={2025},
+      url={https://openreview.net/forum?id=Odh8IynO1o},
+      note={}
 }
 
 @misc{bochkov2025growingtransformersmodularcomposition,
